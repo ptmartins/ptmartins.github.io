@@ -1,9 +1,5 @@
-/*
-blue: #021d44
-light_blue: #0098FF 
-independence: #4B4E6D
-pink: #ff3e55
-*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -191,7 +187,7 @@ strong {
 }
 
 .section-title {
-    color: #2A2830;
+    color: #53f6c6; /* #2A2830; */
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 4.8rem;
@@ -220,13 +216,14 @@ strong {
             justify-content: center;
     position: relative;
     width: 100%;
-
+    text-align: center;
 }
 
 .greetings {
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: 800;
-    width: 80%;
+    width: 100%;
+    text-align: center;
 }
 
 .greetings p {
@@ -268,13 +265,11 @@ strong {
     font-weight: 700;
     font-size: 1.4rem;
     text-transform: uppercase;
-    -webkit-animation: btnBlink 2s ease-in infinite;
-            animation: btnBlink 2s ease-in infinite;
     padding: .75rem 1.5rem;
 }
 
 .section--hero .btn--cta {
-    margin: 5rem auto 0 0;
+    margin: 5rem auto 0 auto;
 }
 
 .btn--learnMore:hover,
@@ -282,9 +277,7 @@ strong {
     color: #1d1b24;
     background-color: #53f6c7; 
     border-color: #53f6c7;
-    -webkit-animation: btnBlink .6s ease-in;
-            animation: btnBlink .6s ease-in;
-            text-decoration: none;
+    text-decoration: none;
 }
 
 
@@ -294,9 +287,9 @@ strong {
     background-color: #201e28;
 }
 
-.section--about .section-title {
+/* .section--about .section-title {
     color: #6e6b79;
-}
+} */
 
 .wrapper--about {
     color: #fafafa;
@@ -331,8 +324,8 @@ strong {
 .btn--cta {
     display: inline-block;
     margin: 5rem auto 0 0;
-    font-size: 1.4rem;
-    padding: .75rem 1.5rem;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
     color: #53f6c7;
     border-color: #53f6c7;
     font-weight: 700;
@@ -353,7 +346,7 @@ strong {
 }
 
 .section--skills .section-title {
-    color: #6e6b79;
+    color: #53f6c6; /* #6e6b79; */
 }
 
 .languages {
@@ -443,143 +436,20 @@ strong {
     width: 60%;
 }
 
-
-/* ---- PORTFOLIO SECTION ---- */
-.section--portfolio {
-    background-color: #201e28;
-}
-
-.section--portfolio .section-title {
-    color: #6e6b79;
-}
-
-.projects-container {
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.project {
-    padding: 1.5rem;
-    margin: .75rem;
-    width: calc(33.333% - 1.5rem);
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 50%;
-    position: relative;
-    opacity: .5;
-    -webkit-transition: all .3s ease-in;
-    transition: all .3s ease-in;
-    cursor: pointer;
-}
-
-.project:hover {
-    opacity: .9;
-}
-
-.project::before {
-    content: '';
-    padding-top: 56.25%;
-    display: block;
-}
-
-.project-decor {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-}
-
-.project-decor::before {
-    content: '';
-    height: 1px;
-    background-color:#6e6b79;
-    width: 80%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-}
-
-.project-decor::after {
-    content: '';
-    width: 1px;
-    background-color:#6e6b79;
-    height: 80%;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-}
-
-
-.project--cebal {
-    background-image: url('../images/logos/cebal.png');
-    background-size: 50%;
-}
-
-.project--biquimicos {
-    background-image: url('../images/logos/biquimicos.png');
-    background-size: 60%;
-}
-
-.project--suspiro {
-    background-image: url('../images/logos/suspiro.png');
-    background-size: 60%;
-}
-
-
-.project--oldenburger {
-    background-image: url('../images/logos/oldenburger.png');
-}
-
-.project--supermed {
-    background-image: url('../images/logos/superdente.png');
-    background-size: 20%;
-}
-
-.project--oldenburger .project-decor::before,
-.project--supermed .project-decor::before {
-    display: none;
-}
-
-.project--suspiro .project-decor::after {
-    display: none;
-}
-
-.project-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #021d44;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.project-description, 
-.project-date {
-    font-size: 1.2rem;
-}
-
-
-
 /* ---- CONTACTS SECTION ---- */
 .section--contacts {
     background-color: #1d1b24;
 }
 
 .section-title--contacts {
-    color: #6e6b79;
-    margin-bottom: 1rem;
+    color: #53f6c6; /* #6e6b79; */
     text-align: center
 }
 
 .contact-form {
     text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contacts-text {
@@ -599,7 +469,7 @@ strong {
 .contact-form .u-input {
     -webkit-box-flex: 1;
             flex-grow: 1;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .contact-form .u-input:last-child {
@@ -790,6 +660,7 @@ strong {
     transition: -webkit-transform .3s ease-in;
     transition: transform .3s ease-in;
     transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+    z-index: 10000;
 }
 
 .sideNav-listItem {
@@ -797,6 +668,7 @@ strong {
     font-weight: 700;
     font-size: 3rem;
     padding: 1.5rem 0;
+    text-align: right;
 }
 
 .sideNav-link:hover {
@@ -812,6 +684,8 @@ strong {
     font-size: 3rem;
     cursor: pointer;
     color: #1d1b24;
+    position: relative;
+    top: -1.5rem;
 }
 
 
@@ -820,48 +694,20 @@ strong {
 }
 
 
-/* ---- ANIMATIONS ---- */
-@-webkit-keyframes btnBlink {
-    0% {
-        color: #fff;
-        border-color: #fff;
-    }
-
-    50% {
-        color: #ff3e55;
-        border-color: #ff3e55;
-    }
-
-    100% {
-        color: #fff;
-        border-color: #fff;
-    }
-}
-@keyframes btnBlink {
-    0% {
-        color: #fff;
-        border-color: #fff;
-    }
-
-    50% {
-        color: #53f6c7;
-        border-color: #53f6c7;
-    }
-
-    100% {
-        color: #fff;
-        border-color: #fff;
-    }
-}
-
 /* ---- MEDIA QUERIES ---- */
  /* Extra Small Devices, Phones */ 
  @media only screen and (min-width : 480px) {
-
+    .greetings {
+        font-size: 3.2rem;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 640px) {
+    .greetings {
+        font-size: 4rem;
+    }
+
     .project {
         margin: 0 2.5rem 2.5rem 0;
         width: calc(50% - 2.5rem);
@@ -907,6 +753,11 @@ strong {
 
     .greetings {
         font-size: 6.2rem;
+        text-align: left;
+    }
+
+    .section--hero .btn--cta {
+        margin: 5rem auto 0 0;
     }
 
     .greetings--pt,
@@ -935,6 +786,7 @@ strong {
     .language {
         font-size: 8rem;
         min-width: 120px;
+        color: rgba(255, 255, 255, .8);
     }
 
     .project {
