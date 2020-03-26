@@ -693,45 +693,6 @@ strong {
     color: #1d1b24;
 }
 
-/* FORM SENT - PAGE */
-.page--thanks {
-    background-color: #1d1b24;
-}
-
-.thanks-message {
-    border: 2px solid #53f6c6;
-    max-width: 640px;
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    padding: 3rem;
-    color: #fff;
-}
-
-.thanks-message .successIcon {
-    position: absolute;
-    top: 3rem;
-    right: 3rem;
-    font-size: 8rem;
-    color: #53f6c6;
-}
-
-.thanks-title {
-    color: #53f6c6;
-    font-size: 4.8rem;
-    margin-bottom: 6rem;
-    font-weight: 700;
-}
-
-.thanks-redirect {
-    color: #53f6c6;
-    text-decoration: none;
-}
-
-
 /* ---- MEDIA QUERIES ---- */
  /* Extra Small Devices, Phones */ 
  @media only screen and (min-width : 480px) {
