@@ -7,17 +7,26 @@
             size: 50
         },
         menuBtn = document.getElementById('menuBtn'),
-        sideNav = document.getElementById('sideNav'),
-        closeBtn = document.getElementById('closeBtn'),
-        links = document.getElementsByClassName('sideNav-link'),
+        sideNav = document.getElementById('nav'),
+        links = document.getElementsByClassName('nav-link'),
+        hamburger = document.getElementById('hamburger'),
 
         showMenu = function() {
+            debugger;
             sideNav.classList.toggle('open');
+
+            if(hamburger.classList.contains('active')){
+                hamburger.classList.remove('active');
+            }
+            else {
+                hamburger.classList.add('active');
+            }
+ 
         },
 
         addEventListeners = function() {
+            
             menuBtn.addEventListener('click', showMenu);
-            closeBtn.addEventListener('click', showMenu);
             for(let i = 0; i < links.length; i++) {
                 links[i].addEventListener('click', showMenu);
             }
