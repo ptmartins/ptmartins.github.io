@@ -12,7 +12,6 @@
         hamburger = document.getElementById('hamburger'),
 
         showMenu = function() {
-            debugger;
             sideNav.classList.toggle('open');
 
             if(hamburger.classList.contains('active')){
