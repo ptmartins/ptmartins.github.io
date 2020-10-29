@@ -291,10 +291,6 @@ strong {
     background-color: #201e28;
 }
 
-/* .section--about .section-title {
-    color: #6e6b79;
-} */
-
 .wrapper--about {
     color: #fafafa;
     display: -webkit-box;
@@ -357,7 +353,7 @@ strong {
 }
 
 .section--skills .section-title {
-    color: #53f6c6; /* #6e6b79; */
+    color: #53f6c6;
 }
 
 .languages {
@@ -461,13 +457,50 @@ strong {
     width: 60%;
 }
 
+/* ---- PORTFOLIO SECTION ---- */
+.section--portfolio {
+    background-color: #19171f;
+}
+
+.projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    color: #19171f;
+    margin: 0 0.75rem 1.5rem;
+    min-width: 150px;
+    padding: 0.75rem 2rem;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.project:hover {
+    background-color: #53f6c7;
+}
+
+.project-link {
+    font-weight: 700;
+}
+
+.project-link:hover {
+    text-decoration: none;
+}
+
 /* ---- CONTACTS SECTION ---- */
 .section--contacts {
     background-color: #1d1b24;
 }
 
 .section-title--contacts {
-    color: #53f6c6; /* #6e6b79; */
+    color: #53f6c6;
     text-align: center;
 }
 
@@ -768,14 +801,14 @@ strong {
         font-size: 4rem;
     }
 
-    .project {
+    /* .project {
         margin: 0 2.5rem 2.5rem 0;
         width: calc(50% - 2.5rem);
     }
 
     .project:nth-child(even) {
         margin-right: 0;
-    }
+    } */
 }
 
 /* Small Devices, Tablets */
@@ -850,7 +883,7 @@ strong {
         color: rgba(255, 255, 255, 0.8);
     }
 
-    .project {
+    /* .project {
         width: calc(33.333% - 2.5rem);
     }
 
@@ -860,7 +893,7 @@ strong {
 
     .project:nth-child(3n) {
         margin-right: 0;
-    }
+    } */
 
     .wrapper--footer {
         -webkit-box-orient: horizontal;
