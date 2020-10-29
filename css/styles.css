@@ -144,7 +144,7 @@ strong {
     transition: all 0.3s ease-in;
     width: 40px;
     pointer-events: all;
-    z-index: 9999;
+    z-index: 9;
     cursor: pointer;
 }
 
@@ -177,7 +177,7 @@ strong {
     position: fixed;
     top: 1.5rem;
     right: 3rem;
-    z-index: 9999;
+    z-index: 99999;
 }
 
 .hamburger {
@@ -303,6 +303,10 @@ strong {
 
 .tag {
     color: #53f6c7;
+}
+
+.translucent {
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .greetings--pt,
@@ -781,6 +785,7 @@ strong {
     transition: -webkit-transform 1s ease-in;
     transition: transform 1s ease-in;
     transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+    z-index: 9000;
 }
 
 .nav.open .nav-inner {
