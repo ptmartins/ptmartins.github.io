@@ -77,7 +77,7 @@
             gsap.fromTo(about, {
                 opacity: 0
             }, {
-                delay: .75,
+                delay: .65,
                 opacity: 1,
                 duration: 1,
                 autoAlpha: 1,
@@ -94,7 +94,7 @@
                     opacity: 0
                 }, {
                     opacity: 1,
-                    delay: 0 + (i/2),
+                    delay: 0 + (i/4),
                     duration: .5,
                     autoAlpha: 1,
                     ease: 'none'
