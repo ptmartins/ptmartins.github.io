@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meet Cambridge</title>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Fontawesome 5.0 -->
+        <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+        <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+        <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>      
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="inner-container inner-container--header">
+                <!-- Logo -->
+                <a href="#" class="header__logo">
+                    <img src="images/logo.svg" alt="Meet Cambridge logo" title="Home">
+                </a>
+
+                <!-- Navigation -->
+                <nav class="nav header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__listItem">
+                            <a href="javascript:void(0)" class="u-link nav__link">Venues</a>
+                        </li>
+                        <li class="nav__listItem">
+                            <a href="javascript:void(0)" class="u-link nav__link">About us</a>
+                        </li>
+                        <li class="nav__listItem">
+                            <a href="javascript:void(0)" class="u-link nav__link">About Cambridge</a>
+                        </li>
+                    </ul>
+                    <div id="burgerMenu" class="burgerMenu">
+                        <span id="hamburger" class="hamburger"></span>
+                    </div>
+                </nav>
+
+                <!-- CTA's -->
+                <div class="header__cta">
+                    <a href="javascript:void(0)" class="btn btn--secondary">My Event log in</a>
+                    <a href="javascript:void(0)" class="btn btn--main">Enquire</a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Section: Hero -->
+        <section class="section section--hero hero">
+            <picture class=hero__banner>
+                <source srcset="./images/banner_desktop.png" media="(min-width: 1200px)">
+                <source srcset="./images/banner_tablet.png" media="(min-width: 768px)">
+                <source srcset="./images/banner_mobile.png" media="(min-width: 320px)">
+                <img src="./images/cambridge.png" alt="An aerial picture of Cambridge" class="hero__bannerImage">
+            </picture>
+            <div class="inner-container inner-container--hero">
+                <div class="hero__contents">
+                    <h1 class="hero__title">Discover the best venues in Cambridge</h1>
+                    <form class="form hero__form">
+                        <div class="u-select">
+                            <select>
+                                <option value="">Type of event</option>
+                                <option value="dog">Accomodation only</option>
+                                <option value="cat">Celebration</option>
+                                <option value="hamster">Day meeting</option>
+                                <option value="parrot">Dinning</option>
+                                <option value="spider">Residential meeting</option>
+                                <option value="goldfish">Room hire</option>
+                            </select>
+                        </div>
+                        <div class="u-select">
+                            <select>
+                                <option value="">Type of venue</option>
+                                <option value="dog">College or Academic venue</option>
+                                <option value="cat">Hotel or other venue</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn--main">Explore</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Intro -->
+        <section id="intro" class="section section--intro intro">
+            <div class="inner-container">
+                <h2 class="section__title">Local experts here to help you deliver an exceptional event experience</h2>
+                <ul class="intro__items">
+                    <li class="intro__item">
+                        <h4 class="intro__itemTitle">Free Service</h4>
+                        <p class="intro__itemTxt">We offer a free service with no obligation to book and a single point of contact
+                        for over 50 venues in the city of Cambridge and beyond.</p>
+                    </li>
+                    <li class="intro__item">
+                        <h4 class="intro__itemTitle">Excellent customer support</h4>
+                        <p class="intro__itemTxt">We are experienced event professionals and wwe're here to help you whether this is 
+                        your 1st event or your 100th event, we'll support you every step of the way.</p>
+                    </li>
+                    <li class="intro__item">
+                        <h4 class="intro__itemTitle">Local knowledge</h4>
+                        <p class="intro__itemTxt">We have extensive knowledge about venues in Cambridge and the wider area, as well as
+                        the region itself. We're all local residents ourselves and we know all of the best and secret places!</p>
+                    </li>
+                </ul>
+                <div class="intro__actions">
+                    <a href="javascript:void(0)" class="u-link btn">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Venues -->
+        <section id="venues" class="section section--venues venues">
+            <div class="inner-container inner-container--venues">
+                <h2 class="section__title">Our venues cater for a range of events</h2>
+                <p class="section__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tenetur quasi ut ex. Autem!</p>
+                <div class="venues__offers">
+                    <figure class="card card__venueOffer venue__offer">
+                        <div class="card__thumb">
+                            <img src="images/room.png" alt="A bedroom image" class="card__image venue__image">
+                        </div>
+                        <figcaption class="card__details">
+                            <h4 class="card__title">Accommodation</h4>
+                            <p class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto eius magni fugiat nihil.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card card__venueOffer venue__offer">
+                        <div class="card__thumb">
+                            <img src="images/meetings.png" alt="A meeting room image" class="card__image venue__image">
+                        </div>
+                        <figcaption class="card__details">
+                            <h4 class="card__title">Day meetings</h4>
+                            <p class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto eius magni fugiat nihil.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card card__venueOffer venue__offer">
+                        <div class="card__thumb">
+                            <img src="images/dinning.png" alt="Fine dinning table" class="card__image venue__image">
+                        </div>
+                        <figcaption class="card__details">
+                            <h4 class="card__title">Dinning and special occasions</h4>
+                            <p class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto eius magni fugiat nihil.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card card__venueOffer venue__offer">
+                        <div class="card__thumb">
+                            <img src="images/office.png" alt="An office building" class="card__image venue__image">
+                        </div>
+                        <figcaption class="card__details">
+                            <h4 class="card__title">Residential events</h4>
+                            <p class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto eius magni fugiat nihil.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card card__venueOffer venue__offer">
+                        <div class="card__thumb">
+                            <img src="images/meeting_room.png" alt="A meeting room" class="card__image venue__image">
+                        </div>
+                        <figcaption class="card__details">
+                            <h4 class="card__title">Room hire</h4>
+                            <p class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto eius magni fugiat nihil.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="card card__venueOffer venue__offer">
+                        <div class="card__thumb">
+                            <img src="images/wedding.png" alt="A wedding picture" class="card__image venue__image">
+                        </div>
+                        <figcaption class="card__details">
+                            <h4 class="card__title">Weddings</h4>
+                            <p class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto eius magni fugiat nihil.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="inner-container inner-container--footerTop">
+                    <div class="footer__institutional">
+                        <img src="/dist/images/cambridge_university_light.png" alt="The Cambridge University logo" class="footer__institutionalLogo">
+                        <p class="footer__institutionalTxt">Meet Cambridge is the free, offcial venue-finding service for Cambridge, the Cambridge Colleges and The University of 
+                        Cambridge - we're a not for profit organistion, owned by Cambridge Colleges.</p>
+                    </div>
+                    <div class="footer__menu">
+                        <h5 class="footer__title">Sitemap</h5>
+                        <ul class="footer__menuItems">
+                            <li class="footer__menuItem">
+                                <a href="javascript:void(0)" class="footer__itemLink u-link u-link--contrast u-link--fake">Our Services</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="javascript:void(0)" class="footer__itemLink u-link u-link--contrast u-link--fake">Testimonials</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="javascript:void(0)" class="footer__itemLink u-link u-link--contrast u-link--fake">Press</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="javascript:void(0)" class="footer__itemLink u-link u-link--contrast u-link--fake">Contact Us</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="javascript:void(0)" class="footer__itemLink u-link u-link--contrast u-link--fake">Blog</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="javascript:void(0)" class="footer__itemLink u-link u-link--contrast u-link--fake">Venue Membership</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="javascript:void(0)" class="footer__itemLink u-link u-link--contrast u-link--fake">Sustainability Statement</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu">
+                        <h5 class="footer__title">Sitemap</h5>
+                        <ul class="footer__menuItems">
+                            <li class="footer__menuItem">
+                                <a href="" class="footer__itemLink u-link u-link--contrast u-link--fake">Residential Schools</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="" class="footer__itemLink u-link u-link--contrast u-link--fake">Summer Schools</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="" class="footer__itemLink u-link u-link--contrast u-link--fake">Agencies & PCOs</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="" class="footer__itemLink u-link u-link--contrast u-link--fake">Associations and Societies</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="" class="footer__itemLink u-link u-link--contrast u-link--fake">Large events</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="" class="footer__itemLink u-link u-link--contrast u-link--fake">Accomodation</a>
+                            </li>
+                            <li class="footer__menuItem">
+                                <a href="" class="footer__itemLink u-link u-link--contrast u-link--fake">Weddings</a>
+                            </li>
+                        </ul>
+                    </div>  
+
+                    <div class="footer__contacts">
+                        <div class="footer__social">
+                            <ul class="footer__socialIcons">
+                                <li class="footer__socialIcon">
+                                    <a href="https://about.facebook.com/" target="_blank" class="footer__socialLink" title="Facebook">
+                                        <i class="footer__icon fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__socialIcon">
+                                    <a href="https://about.twitter.com/" target="_blank" class="footer__socialLin" title="Twitter">
+                                        <i class="footer__icon fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__socialIcon">
+                                    <a href="https://about.linkedin.com/" target="_blank" class="footer__socialLink" title="Linkedin">
+                                        <i class="footer__icon fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li class="footer__socialIcon">
+                                    <a href="https://www.youtube.com/intl/en-GB/about/" target="_blank" class="footer__socialLink" title="YouTube">
+                                        <i class="footer__icon fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__details">
+                            <p class="footer__copyright">&copy; 2021 Meet Cambridge</p>
+                            <p class="footer__phone">+44 (0)1223 768740 Registered in England.</p>
+                            <p class="footer__registration">Registered Number: 06960613</p>
+                        </div>
+                        <a href="#" class="footer__privacyPolicy u-link u-link--contrast">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="inner-container inner-container--footerBottom">
+                    <div class="partners">
+                        <a href="" class="u-link u-link--partner partner partner--cambridge">
+                            <img src="/dist/images/cambridge_university.svg" alt="Small logo for Cambridge University" class="partner__logo">
+                        </a>
+                        <a href="" class="u-link u-link--partner partner partner--mia">
+                            <img src="/dist/images/mia-logo.png" alt="Small logo for Meetings Insdustry Association" class="partner__logo"> 
+                        </a>
+                        <a href="" class="u-link u-link--partner partner partner--bcc">
+                            <img src="/dist/images/BCC-logo.png" alt="Small logo for British Chamber of Commerce" class="partner__logo"> 
+                        </a>
+                        <a href="" class="u-link u-link--partner partner partner--abpco">
+                            <img src="/dist/images/abpco-logo.png" alt="Small logo for ABPCO" class="partner__logo"> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JS Scripts -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
