@@ -1,7 +1,7 @@
 (function() {
     let DOM = {},
         setEl,
-        ll,
+        selectOptions,
         select, 
         selectItems,
         option,
@@ -23,10 +23,10 @@
         handleSelects = () => {
             for(let i = 0; i < DOM.customSelects.length; i++) {
                 setEl = DOM.customSelects[i].querySelector('select');
-                ll = setEl.length;
+                selectOptions = setEl.length;
 
                 select = document.createElement("DIV");
-                select.className = "select--selected";
+                select.className = "select";
                 select.innerHTML = setEl.options[setEl.selectedIndex].innerHTML;
 
                 DOM.customSelects[i].appendChild(select);
@@ -34,21 +34,20 @@
                 selectItems = document.createElement("DIV");
                 selectItems.className = "select__items select--hide";
 
-                for (let j = 1; j < ll; j++) {
+                for (let j = 1; j < selectOptions; j++) {
                     option = document.createElement("DIV");
                     pseudo = document.createElement("SPAN");
                     pseudo.className = 'pseudo fas fa-check';
                     option.innerHTML = setEl.options[j].innerHTML;
-                    // option.appendChild(pseudo);
-                    option.addEventListener("click", function(e) {
-                        let y, i, k, s, h, sl, yl;
-                        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                        sl = s.length;
-                        h = this.parentNode.previousSibling;
+                    option.addEventListener("click", function(ev) {
+                        let k, ha, y, i, sa,  sl, yl;
+                        sa = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                        sl = sa.length;
+                        ha = this.parentNode.previousSibling;
                         for (i = 0; i < sl; i++) {
-                          if (s.options[i].innerHTML == this.innerHTML) {
-                            s.selectedIndex = i;
-                            h.innerHTML = this.innerHTML;
+                          if (sa.options[i].innerHTML == this.innerHTML) {
+                            sa.selectedIndex = i;
+                            ha.innerHTML = this.innerHTML;
                             y = this.parentNode.getElementsByClassName("isSelected");
                             yl = y.length;
                             for (k = 0; k < yl; k++) {
@@ -59,14 +58,14 @@
                             break;
                           }
                         }
-                        h.click();
+                        ha.click();
                     });
                     selectItems.appendChild(option);
                 }   
 
                 DOM.customSelects[i].appendChild(selectItems);
-                select.addEventListener("click", function(e) {
-                  e.stopPropagation();
+                select.addEventListener("click", function(ev) {
+                  ev.stopPropagation();
                   closeCustomSelects(this);
                   this.nextSibling.classList.toggle("select--hide");
                   this.classList.toggle("select__arrow--active");
@@ -80,21 +79,24 @@
          * Close custom drop-downs
          */
         closeCustomSelects = (els) => {
-            let x, y, i, xl, yl, arrNo = [];
-            x = document.getElementsByClassName("select__items");
-            y = document.getElementsByClassName("select--selected");
-            xl = x.length;
-            yl = y.length;
-            for (i = 0; i < yl; i++) {
-              if (els == y[i]) {
-                arrNo.push(i)
+            let selectItems, select, i, selectItemsLength, selectLength, arr = [];
+            
+            selectItems = document.getElementsByClassName("select__items");
+            select = document.getElementsByClassName("select");
+            selectItemsLength = selectItems.length;
+            selectLength = select.length;
+            
+            for (i = 0; i < selectLength; i++) {
+              if (els == select[i]) {
+                arr.push(i)
               } else {
-                y[i].classList.remove("select__arrow--active");
+                select[i].classList.remove("select__arrow--active");
               }
             }
-            for (i = 0; i < xl; i++) {
-              if (arrNo.indexOf(i)) {
-                x[i].classList.add("select--hide");
+            
+            for (i = 0; i < selectItemsLength; i++) {
+              if (arr.indexOf(i)) {
+                selectItems[i].classList.add("select--hide");
               }
             }
         },
