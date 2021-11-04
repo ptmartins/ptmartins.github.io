@@ -209,11 +209,9 @@ body {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   overflow-y: auto;
-  height: 400px;
-  max-height: calc(100% - 82px - 72px);
+  min-height: 1px;
+  height: calc(100% - 82px - 72px);
 }
 .collections-mainMenu {
   -webkit-box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
