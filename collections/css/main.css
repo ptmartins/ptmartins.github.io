@@ -87,7 +87,7 @@ body {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  max-height: calc(100vh - 87px);
+  max-height: calc(100% - 87px);
 }
 .collections-searchFilter {
   display: -webkit-box;
