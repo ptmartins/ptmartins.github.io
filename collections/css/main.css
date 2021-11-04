@@ -46,8 +46,7 @@ html {
 body {
   color: #3e3f3f;
   font-size: 1rem;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
