@@ -181,11 +181,12 @@ a:hover,
   width: 100%;
 }
 .u-input:focus {
-  -webkit-box-shadow: 0 0 8px 1px rgba(150, 215, 1, 0.3);
-  box-shadow: 0 0 8px 1px rgba(150, 215, 1, 0.3);
+  -webkit-box-shadow: 0 0 8px 1px var(--accent-color, #97c21e);
+  box-shadow: 0 0 8px 1px var(--accent-color, #97c21e);
   border-color: #97c21e;
   border-color: var(--accent-color, #97c21e);
   outline: none;
+  content: '';
 }
 .u-input:not(:placeholder-shown) + .floatingLabel,
 .u-input:focus + .floatingLabel {
