@@ -97,6 +97,7 @@ body {
   max-height: 100vh;
   overflow: hidden;
   width: 100vw;
+  min-height: 1px;
 }
 .nav,
 .pattern,
@@ -129,6 +130,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   position: relative;
+  background-color: #242424;
 }
 .formContainer {
   width: 40%;
@@ -384,6 +386,56 @@ a:hover,
 .panel-btn:nth-child(even) {
   margin-right: 0;
 }
-.AccentColor {
+.accentColor {
   fill: var(--accent-color, #97c21e) !important;
+}
+@media all and (max-width: 576px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .nav {
+    height: 64px;
+    width: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-height: 64px;
+    overflow: hidden;
+  }
+  .pattern {
+    height: 40%;
+    width: 100%;
+    min-height: 40%;
+  }
+  main {
+    min-height: auto;
+  }
+}
+@media all and (max-width: 768px) {
+  .pattern {
+    width: calc(45% - 64px);
+  }
+  .formContainer {
+    width: 90%;
+  }
+}
+@media all and (max-width: 992px) {
+  .formContainer {
+    width: 80%;
+  }
+}
+@media all and (max-width: 1200px) {
+  .formContainer {
+    width: 75%;
+  }
+}
+@media all and (max-width: 1400px) {
+  .formContainer {
+    width: 65%;
+  }
 }
