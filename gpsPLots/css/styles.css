@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #333;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-bottom: .75rem;
+    padding: .75rem 1.5rem;
+    transition: all .2s ease-in;
+    width: 100%;
+}
+
+.btn:hover {
+    box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+}
+
+.btn.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn i {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: .75rem;
+    pointer-events: none;
+}
+
+.btn-group {
+    margin-bottom: 3rem;
+}
+
+.btn-group-title {
+    font-size: 1.2rem;
+    margin-bottom: .75rem;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+.controls {
+    background-color: #d1d7e0;
+    padding: 1.5rem;
+} 
+
+.controls__title {
+    align-items: center;
+    color: #000;
+    display: flex;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.controls__title span:not(.logo) {
+    font-weight: 300;
+}
+
+.logo {
+    background-image: url('../images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 40px;
+    margin-right: 1.5rem;
+    width: 40px;
+}  
+
+.input__title {
+    font-size: 1.1rem;
+    margin-bottom: .75rem;
+}
+
+.input__group {
+    display: flex;
+}
+
+.map { 
+    height: 100vh; 
+}

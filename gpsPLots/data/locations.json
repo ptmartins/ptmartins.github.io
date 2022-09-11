@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Observation 1",
+        "date": "2019-01-01", 
+        "lat": "38.5050", 
+        "long": "-8.8739",
+        "behaviour": "feeding",
+        "size": "6"
+    },
+    {
+        "title": "Observation 2",
+        "date": "2019-01-01", 
+        "lat": "38.5100", 
+        "long": "-8.8940",
+        "behaviour": "interacting",
+        "size": "6"
+    },
+    {
+        "title": "Observation 3",
+        "date": "2019-01-01", 
+        "lat": "38.5001", 
+        "long": "-8.8965",
+        "behaviour": "traveling",
+        "size": "6"
+    },
+    {
+        "title": "Observation 4",
+        "date": "2019-01-01", 
+        "lat": "38.4911", 
+        "long": "-8.8865",
+        "behaviour": "feeding",
+        "size": "6"
+    },
+    {
+        "title": "Observation 5",
+        "date": "2019-01-01", 
+        "lat": "38.4920", 
+        "long": "-8.8565",
+        "behaviour": "traveling",
+        "size": "6"
+    },
+    {
+        "title": "Observation 6",
+        "date": "2019-01-01", 
+        "lat": "38.4790", 
+        "long": "-8.8740",
+        "behaviour": "traveling",
+        "size": "6"
+    },
+    {
+        "title": "Observation 7",
+        "date": "2019-01-01", 
+        "lat": "38.5091", 
+        "long": "-8.8875",
+        "behaviour": "traveling",
+        "size": "6"
+    },
+    {
+        "title": "Observation 8",
+        "date": "2019-01-01", 
+        "lat": "38.4841", 
+        "long": "-8.8761",
+        "behaviour": "traveling",
+        "size": "6"
+    },
+    {
+        "title": "Observation 9",
+        "date": "2019-01-01", 
+        "lat": "38.4820", 
+        "long": "-8.8465",
+        "behaviour": "traveling",
+        "size": "6"
+    }
+]
