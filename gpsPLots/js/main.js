@@ -136,7 +136,7 @@
          */
         renderMap = () => {
 
-            fetch('../data.json')
+            fetch('..gpsPLots/data.json')
                 .then(response => response.json())
                 .then(data => {
                     getSpecies(data);
