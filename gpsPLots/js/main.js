@@ -139,9 +139,7 @@
             fetch('../data.json')
                 .then(response => response.json())
                 .then(data => {
-
                     getSpecies(data);
-
                     map = L.map('map').setView(mapOptions.center, mapOptions.zoom);
                     map.options.maxZoom = mapOptions.maxZoom;
                     map.options.minZoom = mapOptions.minZoom;
@@ -150,7 +148,6 @@
                             maxZoom: 19,
                             attribution: '© OpenStreetMap'
                         }).addTo(map);
-            
                     addPoints(data);
                     if(btns === null) {
                         renderFilters();
